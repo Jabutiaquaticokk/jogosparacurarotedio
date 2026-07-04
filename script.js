@@ -8,6 +8,7 @@ function pedraPapelTesoura(){
     escolha=escolha -1
     i=i-1
     n=items[i]
+    alert('Pedra, papel e tesooouuuurA.')
     document.getElementById('ppd').innerHTML='Sua escolha: '+items[escolha]+'<br> Escolha do Bot: '+n
     // console.log(n);
     if(escolha==0&&i==1||escolha==1&&i==0){
