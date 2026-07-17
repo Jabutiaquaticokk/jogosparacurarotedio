@@ -1,28 +1,199 @@
-*{
-    padding: 3px;
-    font-family: monospace;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
 }
 
-
-h3{
-   margin: 1px; 
-   font-size: 15px;
-   font-family: monospace;
-
+body {
+    background-color: #1e1e2f;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
 }
 
-h2{
-    margin: 1px;
-    border: inset;
-    margin: 3px;
-    border-radius: 5px;
-    padding: 3px;
+section h1 {
+    font-size: 3rem;
+    color: #ff4757; 
+    text-shadow: 3px 3px 0px #2f3542;
+    margin-top: 20px;
+    letter-spacing: 2px;
 }
 
-hr{
-    padding: 1;
-    background-color: black;
-    border-radius: 5px;
-    margin: 1px;
+hr {
+    width: 80%;
+    max-width: 500px;
     border: none;
+    height: 2px;
+    background-color: #2f3542;
+    margin: 20px 0;
+}
+
+.div-ppd {
+    background-color: #2f3542;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+}
+
+.div-ppd h2 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+#pontos {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #2ed573; 
+    margin-bottom: 10px;
+}
+
+.div-ppd h3 {
+    font-size: 0.9rem;
+    color: #a4b0be;
+    font-weight: normal;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+.div-ppd button {
+    font-size: 2.5rem; 
+    background-color: #ffffff;
+    border: 3px solid transparent;
+    border-radius: 15px;
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+
+.div-ppd button:hover {
+    transform: translateY(-5px) scale(1.1);
+    border-color: #ff4757;
+    box-shadow: 0 5px 15px rgba(255, 71, 87, 0.4);
+}
+
+
+.div-ppd button:active {
+    transform: scale(0.95);
+}
+
+
+.div-ppd button[onclick="pedraPapelTesoura()"] {
+    background-color: #ffa502; 
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding: 12px 30px;
+    margin-top: 25px;
+    border-radius: 30px;
+    border: none;
+    width: 80%;
+}
+
+
+.div-ppd button[onclick="pedraPapelTesoura()"]:hover {
+    background-color: #ff7f50;
+    border-color: transparent;
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(255, 165, 2, 0.4);
+}
+
+
+#ppd {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #dfe4ea;
+    min-height: 25px; 
+}
+
+@keyframes rgbGamer {
+    0% { filter: hue-rotate(0deg); }
+    100% { filter: hue-rotate(360deg); }
+}
+
+
+section h1 {
+    font-size: 3rem;
+    color: #ff4757;
+    text-shadow: 3px 3px 0px #2f3542;
+    margin-top: 20px;
+    letter-spacing: 2px;
+    
+ 
+    animation: rgbGamer 4s linear infinite;
+}
+
+.div-game {
+    background-color: #2f3542;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.div-game h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+#score {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #2ed573;
+    margin-bottom: 15px;
+}
+
+/* Estilo da tela do jogo (Canvas) */
+canvas {
+    background-color: #11121a;
+    border: 4px solid #ff4757;
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto 15px auto;
+    box-shadow: 0 0 15px rgba(255, 71, 87, 0.3);
+}
+
+/* Botões */
+button, .btn-voltar {
+    display: inline-block;
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding: 10px 25px;
+    margin: 5px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    text-decoration: none;
+    border: none;
+}
+
+#btn-start {
+    background-color: #ffa502;
+    color: white;
+}
+
+#btn-start:hover {
+    background-color: #ff7f50;
+    transform: scale(1.05);
+}
+
+.btn-voltar {
+    background-color: #747d8c;
+    color: white;
+}
+
+.btn-voltar:hover {
+    background-color: #a4b0be;
+    transform: scale(1.05);
 }
