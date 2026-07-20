@@ -7,7 +7,7 @@
 }
 
 body {
-    background-color: #1e1e2f;
+    background-color: #ffffff;
     color: #ffffff;
     display: flex;
     flex-direction: column;
@@ -20,8 +20,18 @@ section h1 {
     font-size: 3rem;
     color: #ff4757; 
     text-shadow: 3px 3px 0px #2f3542;
-    margin-top: 20px;
+    margin-top: 10px;
     letter-spacing: 2px;
+
+}
+
+section{
+    background-color: #2f3542;
+    width: 3000px;
+    text-align: center;
+    height: 100px;
+    gap: 30px;
+    margin-bottom: 30px;
 }
 
 hr {
